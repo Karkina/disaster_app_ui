@@ -1,0 +1,36 @@
+<div class="auth-header-form">
+    <!-- Boutons de sélection "Sign In" et "Sign Up" -->
+    <button (click)="showLoginForm = true" [class.active]="showLoginForm">Sign In</button>
+    <button (click)="showLoginForm = false" [class.active]="!showLoginForm">Sign Up</button>
+
+    <!-- Afficher le formulaire de connexion -->
+    <form class="auth-form" (ngSubmit)="submitForm()" *ngIf="showLoginForm">
+        <!-- Champ d'e-mail -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="user.email">
+        
+        <!-- Champ de mot de passe -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required [(ngModel)]="user.password">
+        
+        <!-- Bouton pour s'identifier -->
+        <button type="submit">Sign In</button>
+    </form>
+
+    <!-- Afficher le formulaire de création de compte -->
+    <form class="auth-form" (ngSubmit)="submitForm()" *ngIf="!showLoginForm">
+        <!-- Champ d'e-mail -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="user.email">
+        
+        <!-- Champ de mot de passe -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required [(ngModel)]="user.password">
+        
+        <!-- Champ de vérification du mot de passe -->
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required [(ngModel)]="user.confirmPassword">
+        <!-- Bouton pour créer un compte -->
+        <button type="submit">Sign Up</button>
+    </form>
+</div>

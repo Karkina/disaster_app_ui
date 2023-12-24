@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AuthentificationComponent } from './forms/authentification/authentification.component';
-import { LangagesListComponent } from './languages-list/languages-list.component';
+import { LanguagesListComponent } from './languages-list/languages-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSnackBarModule } from '@angular/material/snack-bar'; // Add MatSnackBarModule
 import { MatCardModule } from '@angular/material/card';
@@ -19,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     AuthentificationComponent,
-    LangagesListComponent,
+    LanguagesListComponent,
     LanguageDetailsComponent,
     HomeComponent
   ],

@@ -3,11 +3,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
-  selector: 'app-langages-list',
-  templateUrl: './langages-list.component.html',
-  styleUrls: ['./langages-list.component.scss']
+  selector: 'app-languages-list',
+  templateUrl: './languages-list.component.html',
+  styleUrls: ['./languages-list.component.scss']
 })
-export class LangagesListComponent {
+export class LanguagesListComponent {
   availableLanguages: string[] = ['English', 'French', 'Spanish', 'German'];
   pendingLanguages: { language: string, votes: number }[] = [];
   newLanguage: string = '';

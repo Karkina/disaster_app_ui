@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LangagesListComponent } from './langages-list.component';
+import { LangagesListComponent } from './languages-list.component';
 
 describe('LangagesListComponent', () => {
   let component: LangagesListComponent;

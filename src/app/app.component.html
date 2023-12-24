@@ -3,81 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natural Disasters</title>
+    <title>Welcome to Language Learning Community</title>
     <link rel="stylesheet" href="https://unpkg.com/primeng@13.0.0/primeng.min.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .p-button {
-            margin-right: 10px;
-        }
-
-        .image-container {
-            text-align: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-    </style>
+    
 </head>
 <body>
     <header>
         <app-authentification></app-authentification>
 
-        <!-- ... Votre en-tête existant ... -->
-        <h1>Welcome to Natural Disasters</h1>
-        <p>Exploring the Earth's Forces</p>
+        <h1>Welcome to Language Learning Community</h1>
+        <p>Explore the World of Languages</p>
     </header>
 
-    <div class="container">
-        <h2>Why Study Natural Disasters?</h2>
-        <p>Natural disasters, such as earthquakes, hurricanes, and wildfires, have a profound impact on our planet and society. By understanding these events, we can:</p>
-        <ul>
-            <li>Protect lives and property through early warning systems.</li>
-            <li>Prepare communities for disaster response and recovery.</li>
-            <li>Advance scientific research to mitigate future disasters.</li>
-        </ul>
-        <p>Join us in exploring the forces of nature and their significance for our world.</p>
-        
-        <app-langages-list></app-langages-list>
-
-        <p>Ready to get started?</p>
-        <p><a class="p-button" href="#">Learn More</a><a class="p-button" href="#">Explore Data</a></p>
-    </div>
-   
-
-    <script src="https://unpkg.com/primeng@13.0.0/primeng.min.js"></script>
+    
+    <router-outlet></router-outlet>
 </body>
 </html>

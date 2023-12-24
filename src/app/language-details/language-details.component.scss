@@ -1,0 +1,32 @@
+/* language-details.component.css */
+.posts-container {
+    display: flex;
+  }
+  
+  .pending-posts {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+  }
+  
+  .post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+  }
+  
+  .post-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .vote-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add more styling as needed */

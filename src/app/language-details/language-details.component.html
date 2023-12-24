@@ -1,0 +1,40 @@
+<div>
+  <h2>Language Details</h2>
+  <p>Details for {{ languageName }}</p>
+
+  <div class="posts-container">
+    
+  <div class="posts-container">
+    <div class="pending-posts">
+      <h3>Pending Posts</h3>
+      <ul>
+        <li *ngFor="let post of pendingPosts">
+          <div class="post-item">
+            <div class="post-content">
+              <span>{{ post.name }} - {{ post.createdBy.firstname }} {{ post.createdBy.lastname }}</span>
+              <div class="vote-section">
+                <button (click)="upvote(post)">
+                  Upvote
+                </button>
+                <span>{{ post.numberVote }}</span>
+                <button (click)="downvote(post)">
+                  Downvote
+                </button>
+              </div>npm
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="validated-posts">
+      <h3>Validated Posts</h3>
+      <ul>
+        <li *ngFor="let post of validatedPosts">
+          {{ post.name }} - {{ post.createdBy.firstname }} {{ post.createdBy.lastname }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

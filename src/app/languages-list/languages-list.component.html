@@ -1,0 +1,31 @@
+
+<div class="language-container">
+  <div class="column">
+    <h2>Available Languages</h2>
+    <ul>
+      <li *ngFor="let language of availableLanguages">
+        <a routerLink="/language/{{ language }}">{{ language }}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="column">
+    <h2>Pending Languages</h2>
+    <div *ngFor="let language of pendingLanguages">
+      <mat-card>
+        <mat-card-title>{{ language.language }}</mat-card-title>
+        <mat-card-content>
+          Votes: {{ language.votes }}
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="upVote(language.language)">Up Vote</button>
+          <button mat-button (click)="downVote(language.language)">Down Vote</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<div class="add-language-container">
+  <input type="text" [(ngModel)]="newLanguage" placeholder="Enter language">
+  <button (click)="addLanguage()">Add</button>
+</div>
